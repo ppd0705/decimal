@@ -627,8 +627,8 @@ func TestBadJSON(t *testing.T) {
 	for _, testCase := range []string{
 		"]o_o[",
 		"{",
-		`{"amount":""`,
-		`{"amount":""}`,
+		`{"amount":"x"`,
+		`{"amount":"w"}`,
 		`{"amount":"nope"}`,
 		`0.333`,
 	} {
@@ -719,8 +719,8 @@ func TestNullDecimalBadJSON(t *testing.T) {
 	for _, testCase := range []string{
 		"]o_o[",
 		"{",
-		`{"amount":""`,
-		`{"amount":""}`,
+		`{"amount":"z"`,
+		`{"amount":"x"}`,
 		`{"amount":"nope"}`,
 		`{"amount":nope}`,
 		`0.333`,
